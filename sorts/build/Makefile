@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/work/MAI/DA/algorithms/sorts
+CMAKE_SOURCE_DIR = /home/harry/MAI/DA/Algorithms/sorts
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/work/MAI/DA/algorithms/sorts/build
+CMAKE_BINARY_DIR = /home/harry/MAI/DA/Algorithms/sorts/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/work/MAI/DA/algorithms/sorts/build/CMakeFiles /root/work/MAI/DA/algorithms/sorts/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/harry/MAI/DA/Algorithms/sorts/build/CMakeFiles /home/harry/MAI/DA/Algorithms/sorts/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/work/MAI/DA/algorithms/sorts/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/harry/MAI/DA/Algorithms/sorts/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,32 +123,32 @@ Sorts/fast:
 	$(MAKE) -f CMakeFiles/Sorts.dir/build.make CMakeFiles/Sorts.dir/build
 .PHONY : Sorts/fast
 
-counting_sort.o: counting_sort.cpp.o
+main.o: main.cpp.o
 
-.PHONY : counting_sort.o
+.PHONY : main.o
 
 # target to build an object file
-counting_sort.cpp.o:
-	$(MAKE) -f CMakeFiles/Sorts.dir/build.make CMakeFiles/Sorts.dir/counting_sort.cpp.o
-.PHONY : counting_sort.cpp.o
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/Sorts.dir/build.make CMakeFiles/Sorts.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-counting_sort.i: counting_sort.cpp.i
+main.i: main.cpp.i
 
-.PHONY : counting_sort.i
+.PHONY : main.i
 
 # target to preprocess a source file
-counting_sort.cpp.i:
-	$(MAKE) -f CMakeFiles/Sorts.dir/build.make CMakeFiles/Sorts.dir/counting_sort.cpp.i
-.PHONY : counting_sort.cpp.i
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/Sorts.dir/build.make CMakeFiles/Sorts.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-counting_sort.s: counting_sort.cpp.s
+main.s: main.cpp.s
 
-.PHONY : counting_sort.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-counting_sort.cpp.s:
-	$(MAKE) -f CMakeFiles/Sorts.dir/build.make CMakeFiles/Sorts.dir/counting_sort.cpp.s
-.PHONY : counting_sort.cpp.s
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/Sorts.dir/build.make CMakeFiles/Sorts.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Sorts"
-	@echo "... counting_sort.o"
-	@echo "... counting_sort.i"
-	@echo "... counting_sort.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 
