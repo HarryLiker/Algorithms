@@ -20,7 +20,7 @@ int main() {
     }
     // CountingSort(counts, max);
     // RadixSort(counts, counts.size());  
-    CreateBuckets (counts, counts.size());
+    BucketSort(counts, counts.size());
     for (int i = 0; i < counts.size(); i++) {
         std::cout << counts[i] << " ";
     }

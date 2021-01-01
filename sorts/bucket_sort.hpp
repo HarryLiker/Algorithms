@@ -2,21 +2,7 @@
 #include <vector>
 #include <algorithm>
 
-/*
-void Bucket_sort(std::vector<int> &counts, int size) {
-    for (int i = 1; i < size; i++) {
-        int current_value = counts[i];
-        int j = i - 1;
-        while (j >= 0 && counts[j] > current_value) {
-            counts[j+1] = counts[j];
-            j--;
-        }
-        counts[j+1] = current_value;
-    }
-}
-*/
-
-void CreateBuckets(std::vector<int> &counts, int size) {
+void BucketSort(std::vector<int> &counts, int size) {
     int max = counts[0];
     int min = counts[0];
     for (int i = 0; i < size; i++) {
