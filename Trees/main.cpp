@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "binary_search.hpp"
+#include "BSTree.hpp"
 
 int main() {
     BinarySearchTree <unsigned long long, std::string> *tree;
